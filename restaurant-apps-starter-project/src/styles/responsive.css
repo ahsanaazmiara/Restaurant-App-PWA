@@ -1,0 +1,137 @@
+@media screen and (min-width: 650px) {
+    .app-bar {
+        grid-template-columns: 1fr auto;
+        padding: 8px 32px;
+    }
+
+    .app-bar .app-bar__brand h1 {
+        font-size: 1.5em;
+    }
+
+    .app-bar .app-bar__menu {
+        display: none;
+    }
+
+    .app-bar .app-bar__navigation {
+        position: static;
+        width: 100%;
+    }
+
+    .app-bar .app-bar__navigation ul li {
+        display: inline-block;
+    }
+
+    .app-bar .app-bar__navigation ul li a {
+        display: inline-block;
+        width: 120px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .restaurant-list {
+        grid-template-columns: 1fr 1fr;
+        margin: 32px 50px;
+    }
+
+    .restaurants.restaurants{
+        grid-template-columns: 1fr 1fr;
+        margin: 32px 50px;
+    }
+
+    .restaurant-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .restaurant-item .restaurant-item__content {
+        flex-grow: 1;
+    }
+
+    .restaurant-item .restaurant-item__header {
+        height: 200px; 
+    }
+
+    .restaurant-detail {
+        display: flex;
+        flex-direction: column; 
+        padding: 32px; 
+        min-height: 100vh; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: #fff; 
+        margin: 32px 50px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .app-bar .app-bar__brand h1 {
+        font-size: 2em;
+    }
+
+    .restaurant-list {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 32px 70px;
+    }
+
+    .restaurant-detail {
+        padding: 48px;
+        margin: 32px 70px;
+    }
+
+    .restaurants.restaurants{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 32px 70px;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .restaurant-list {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 32px 90px;
+    }
+
+    .restaurant-detail {
+        padding: 48px; 
+        margin: 32px 90px;
+    }
+
+    .restaurants.restaurants{
+        grid-template-columns: repeat(3, 1fr);
+        margin: 32px 90px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .restaurant-list {
+        grid-template-columns: repeat(4, 1fr);
+        margin: 32px 150px;
+    }
+
+    .restaurant-detail {
+        padding: 48px; 
+        margin: 32px 200px; 
+    }
+
+    .restaurants.restaurants{
+        grid-template-columns: repeat(4, 1fr);
+        margin: 32px 150px;
+    }
+
+}
+
+@media screen and (min-width: 1600px) {
+    .restaurant-list {
+       grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        margin: 32px 150px;
+    }
+
+    .restaurant-detail {
+        padding: 48px; 
+        margin: 32px 200px; 
+    }
+
+    .restaurants.restaurants{
+        grid-template-columns: repeat(4, 1fr);
+        margin: 32px 150px;
+    }
+}

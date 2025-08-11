@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Tasty Apps for your favorite restaurant dishes.">
+    <meta name="theme-color" content="#DA8359"/>
+ 
+    
+    <title>Tasty Apps - Your Favorite Restaurant App</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="icon" href="./images/heros/favicon.jpeg">
+    <link rel="manifest" href="./app.webmanifest">
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    
+    <script src="https://use.fontawesome.com/b070c8f1df.js" crossorigin="anonymous"></script>
+  </head>
+<body>
+    <a href="#mainContent" class="skip-to-content">Skip to Content</a>
+    <header class="app-bar">
+      <div class="app-bar__menu">
+        <button id="hamburgerButton" aria-label="Open navigation menu">☰</button>
+      </div>
+      <div class="app-bar__brand">
+        <img src="./images/heros/favicon.jpeg" alt="Tasty Apps Logo" class="app-bar__brand__logo lazyload">
+        <h1>Tasty Apps</h1>
+      </div>
+      </div>
+      <nav id="navigationDrawer" class="app-bar__navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#/favorite">Favorite</a></li>
+          <li><a href="https://github.com/ahsanaazmiara">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="mainContent">
+        <section class="hero">
+          <picture>
+            <source media="(max-width: 600px)" srcset="./images/heros/hero-image_2.jpg">
+            <img src='./images/heros/hero-image_2.jpg' 
+                 alt="Delicious spread of restaurant dishes"  class="hero__image lazyload" >
+          </picture>
+        </section>
+        <h2>Explore Restaurant</h2>
+        <section id="restaurant-list" class="restaurant-list">
+        </section>
+        <section class="tips">
+            <h2>Tips Memilih Restoran</h2>
+            <ul>
+                <li><strong>Cek Ulasan:</strong> Baca ulasan dan rating dari pengunjung lain untuk mengetahui kualitas makanan dan layanan.</li>
+                <li><strong>Perhatikan Menu:</strong> Pastikan restoran menawarkan variasi menu yang sesuai dengan selera Anda.</li>
+                <li><strong>Lokasi dan Aksesibilitas:</strong> Pilih restoran yang mudah dijangkau dan memiliki fasilitas parkir yang memadai.</li>
+                <li><strong>Coba Kunjungi Saat Senja:</strong> Suasana restoran bisa berbeda di malam hari. Coba kunjungi saat senja untuk pengalaman yang lebih baik.</li>
+            </ul>
+        </section>
+        <section class="culinary-events">
+            <h2>Event Kuliner Mendatang</h2>
+            <p>Bergabunglah dalam festival makanan tahunan di kota Anda! Nikmati berbagai hidangan dari berbagai restoran dan pelajari lebih lanjut tentang budaya kuliner lokal.</p>
+        </section>
+    </main>
+    <footer>
+      <p>Copyright &#169; 2024 - Tasty Apps</p>
+  </footer>
+    
+</body>
+</html>
